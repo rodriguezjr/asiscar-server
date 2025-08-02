@@ -1,0 +1,587 @@
+2025-08-01 07:58:16  INFO: Operating system name: Windows 10 version: 10.0 architecture: amd64
+2025-08-01 07:58:16  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 24.0.2+12-54
+2025-08-01 07:58:16  INFO: Memory limit heap: 998mb non-heap: 0mb
+2025-08-01 07:58:16  INFO: Character encoding: UTF-8
+2025-08-01 07:58:16  INFO: Version: 6.8.1
+2025-08-01 07:58:16  INFO: Starting server...
+2025-08-01 07:58:17  INFO: HikariPool-1 - Starting...
+2025-08-01 07:58:20  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2025-08-01 07:58:20  INFO: HikariPool-1 - Start completed.
+2025-08-01 07:58:21  INFO: Set default schema name to PUBLIC
+2025-08-01 07:58:21  INFO: Clearing database change log checksums
+2025-08-01 07:58:22  INFO: Successfully acquired change log lock
+2025-08-01 07:58:22  INFO: Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2025-08-01 07:58:22  INFO: Successfully released change log lock
+2025-08-01 07:58:27  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-01 07:58:28  INFO: Successfully acquired change log lock
+2025-08-01 07:58:28  INFO: Using deploymentId: 4049508167
+2025-08-01 07:58:28  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-01 07:58:29  INFO: Table tc_attributes created
+2025-08-01 07:58:29  INFO: Table tc_calendars created
+2025-08-01 07:58:29  INFO: Table tc_commands created
+2025-08-01 07:58:29  INFO: Table tc_device_attribute created
+2025-08-01 07:58:29  INFO: Table tc_device_command created
+2025-08-01 07:58:29  INFO: Table tc_device_driver created
+2025-08-01 07:58:29  INFO: Table tc_device_geofence created
+2025-08-01 07:58:29  INFO: Table tc_device_maintenance created
+2025-08-01 07:58:29  INFO: Table tc_device_notification created
+2025-08-01 07:58:29  INFO: Table tc_devices created
+2025-08-01 07:58:29  INFO: Table tc_drivers created
+2025-08-01 07:58:29  INFO: Table tc_events created
+2025-08-01 07:58:29  INFO: Table tc_geofences created
+2025-08-01 07:58:29  INFO: Table tc_group_attribute created
+2025-08-01 07:58:29  INFO: Table tc_group_command created
+2025-08-01 07:58:29  INFO: Table tc_group_driver created
+2025-08-01 07:58:29  INFO: Table tc_group_geofence created
+2025-08-01 07:58:29  INFO: Table tc_group_maintenance created
+2025-08-01 07:58:29  INFO: Table tc_group_notification created
+2025-08-01 07:58:29  INFO: Table tc_groups created
+2025-08-01 07:58:29  INFO: Table tc_maintenances created
+2025-08-01 07:58:29  INFO: Table tc_notifications created
+2025-08-01 07:58:29  INFO: Table tc_positions created
+2025-08-01 07:58:29  INFO: Table tc_servers created
+2025-08-01 07:58:29  INFO: Table tc_statistics created
+2025-08-01 07:58:29  INFO: Table tc_user_attribute created
+2025-08-01 07:58:29  INFO: Table tc_user_calendar created
+2025-08-01 07:58:29  INFO: Table tc_user_command created
+2025-08-01 07:58:29  INFO: Table tc_user_device created
+2025-08-01 07:58:29  INFO: Table tc_user_driver created
+2025-08-01 07:58:29  INFO: Table tc_user_geofence created
+2025-08-01 07:58:29  INFO: Table tc_user_group created
+2025-08-01 07:58:29  INFO: Table tc_user_maintenance created
+2025-08-01 07:58:29  INFO: Table tc_user_notification created
+2025-08-01 07:58:29  INFO: Table tc_user_user created
+2025-08-01 07:58:29  INFO: Table tc_users created
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_device_command (commandid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_device_command (deviceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_device_driver (deviceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_device_driver (driverid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_device_geofence (deviceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_device_geofence (geofenceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_device_maintenance (deviceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_device_maintenance (maintenanceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_device_notification (deviceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_device_notification (notificationid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_devices (groupid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_events (deviceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_geofences (calendarid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_group_attribute (attributeid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_group_attribute (groupid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_group_command (commandid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_group_command (groupid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_group_driver (driverid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_group_driver (groupid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_group_geofence (geofenceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_group_geofence (groupid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_group_maintenance (groupid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_group_maintenance (maintenanceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_group_notification (groupid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_group_notification (notificationid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_notifications (calendarid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_positions (deviceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_attribute (attributeid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_attribute (userid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_calendar (calendarid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_calendar (userid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_command (commandid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_command (userid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_device_attribute (attributeid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_device_attribute (deviceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_device (deviceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_device (userid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_driver (driverid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_driver (userid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_geofence (geofenceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_geofence (userid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_group (groupid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_group (userid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_maintenance (maintenanceid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_maintenance (userid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_notification (notificationid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_notification (userid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_user (userid)
+2025-08-01 07:58:29  INFO: New row inserted into tc_servers
+2025-08-01 07:58:29  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean::author ran successfully in 518ms
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_groups (groupid)
+2025-08-01 07:58:29  INFO: Foreign key constraint added to tc_user_user (manageduserid)
+2025-08-01 07:58:29  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean-common::author ran successfully in 10ms
+2025-08-01 07:58:29  INFO: Marking ChangeSet: "changelog-4.1::changelog-4.1-mssql::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          schema/changelog-master.xml : DBMS Precondition failed: expected mssql, got h2
+
+2025-08-01 07:58:29  INFO: Index user_device_user_id created
+2025-08-01 07:58:29  INFO: Index position_deviceid_fixtime created
+2025-08-01 07:58:29  INFO: ChangeSet changelog-4.7::changelog-4.7::author ran successfully in 197ms
+2025-08-01 07:58:29  INFO: Index event_deviceid_servertime created
+2025-08-01 07:58:29  INFO: ChangeSet changelog-4.9::changelog-4.9::author ran successfully in 4ms
+2025-08-01 07:58:30  INFO: Columns protocols(VARCHAR(4096)) added to tc_statistics
+2025-08-01 07:58:30  INFO: ChangeSet changelog-4.10::changelog-4.10::author ran successfully in 29ms
+2025-08-01 07:58:30  INFO: Columns announcement(VARCHAR(4000)) added to tc_servers
+2025-08-01 07:58:30  INFO: ChangeSet changelog-4.11::changelog-4.11::author ran successfully in 17ms
+2025-08-01 07:58:30  INFO: Column tc_events.servertime renamed to eventtime
+2025-08-01 07:58:30  INFO: ChangeSet changelog-4.13::changelog-4.13::author ran successfully in 6ms
+2025-08-01 07:58:30  INFO: Table tc_orders created
+2025-08-01 07:58:30  INFO: Table tc_user_order created
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_user_order (userid)
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_user_order (orderid)
+2025-08-01 07:58:30  INFO: Table tc_group_order created
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_group_order (groupid)
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_group_order (orderid)
+2025-08-01 07:58:30  INFO: Table tc_device_order created
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_device_order (deviceid)
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_device_order (orderid)
+2025-08-01 07:58:30  INFO: ChangeSet changelog-4.15::changelog-4.15::author ran successfully in 47ms
+2025-08-01 07:58:30  INFO: Columns disablereports(BOOLEAN) added to tc_servers
+2025-08-01 07:58:30  INFO: Columns disablereports(BOOLEAN) added to tc_users
+2025-08-01 07:58:30  INFO: Column tc_orders.toAddress renamed to toaddresstmp
+2025-08-01 07:58:30  INFO: Column tc_orders.fromAddress renamed to fromaddresstmp
+2025-08-01 07:58:30  INFO: Column tc_orders.toaddresstmp renamed to toaddress
+2025-08-01 07:58:30  INFO: Column tc_orders.fromaddresstmp renamed to fromaddress
+2025-08-01 07:58:30  INFO: ChangeSet changelog-5.0::changelog-5.0::author ran successfully in 72ms
+2025-08-01 07:58:30  INFO: Index idx_drivers_uniqueid created
+2025-08-01 07:58:30  INFO: Index idx_devices_uniqueid created
+2025-08-01 07:58:30  INFO: Index idx_users_email created
+2025-08-01 07:58:30  INFO: Index idx_users_login created
+2025-08-01 07:58:30  INFO: Index idx_users_token created
+2025-08-01 07:58:30  INFO: Columns overlayurl(VARCHAR(512)) added to tc_servers
+2025-08-01 07:58:30  INFO: ChangeSet changelog-5.1::changelog-5.1::author ran successfully in 25ms
+2025-08-01 07:58:30  INFO: Columns status(CHAR(8)) added to tc_devices
+2025-08-01 07:58:30  INFO: Columns geofenceids(VARCHAR(128)) added to tc_devices
+2025-08-01 07:58:30  INFO: ChangeSet changelog-5.2::changelog-5.2::author ran successfully in 69ms
+2025-08-01 07:58:30  INFO: Columns fixedemail(BOOLEAN) added to tc_servers
+2025-08-01 07:58:30  INFO: Columns fixedemail(BOOLEAN) added to tc_users
+2025-08-01 07:58:30  INFO: Columns expirationtime(TIMESTAMP) added to tc_devices
+2025-08-01 07:58:30  INFO: Table tc_keystore created
+2025-08-01 07:58:30  INFO: Index idx_users_token dropped from table tc_users
+2025-08-01 07:58:30  INFO: Column tc_users.token dropped
+2025-08-01 07:58:30  INFO: ChangeSet changelog-5.3::changelog-5.3::author ran successfully in 105ms
+2025-08-01 07:58:30  INFO: Columns motionstate(BOOLEAN),motiontime(TIMESTAMP),motiondistance(DOUBLE),overspeedstate(BOOLEAN),overspeedtime(TIMESTAMP),overspeedgeofenceid(INT) added to tc_devices
+2025-08-01 07:58:30  INFO: Table tc_commands_queue created
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_commands_queue (deviceid)
+2025-08-01 07:58:30  INFO: Index idx_commands_queue_deviceid created
+2025-08-01 07:58:30  INFO: ChangeSet changelog-5.4::changelog-5.4::author ran successfully in 155ms
+2025-08-01 07:58:30  INFO: Column tc_commands_queue.description dropped
+2025-08-01 07:58:30  INFO: ChangeSet changelog-5.5::changelog-5.5::author ran successfully in 11ms
+2025-08-01 07:58:30  INFO: Columns motionstreak(BOOLEAN) added to tc_devices
+2025-08-01 07:58:30  INFO: Table tc_reports created
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_reports (calendarid)
+2025-08-01 07:58:30  INFO: Table tc_user_report created
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_user_report (userid)
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_user_report (reportid)
+2025-08-01 07:58:30  INFO: Table tc_group_report created
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_group_report (groupid)
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_group_report (reportid)
+2025-08-01 07:58:30  INFO: Table tc_device_report created
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_device_report (deviceid)
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_device_report (reportid)
+2025-08-01 07:58:30  INFO: ChangeSet changelog-5.6::changelog-5.6::author ran successfully in 75ms
+2025-08-01 07:58:30  INFO: Columns commandid(INT) added to tc_notifications
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_notifications (commandid)
+2025-08-01 07:58:30  INFO: ChangeSet changelog-5.7::changelog-5.7::author ran successfully in 25ms
+2025-08-01 07:58:30  INFO: Column tc_devices.geofenceids dropped
+2025-08-01 07:58:30  INFO: Columns geofenceids(VARCHAR(128)) added to tc_positions
+2025-08-01 07:58:30  INFO: ChangeSet changelog-5.8::changelog-5.8::author ran successfully in 38ms
+2025-08-01 07:58:30  INFO: Columns calendarid(INT) added to tc_devices
+2025-08-01 07:58:30  INFO: Foreign key constraint added to tc_devices (calendarid)
+2025-08-01 07:58:30  INFO: ChangeSet changelog-5.9::changelog-5.9::author ran successfully in 29ms
+2025-08-01 07:58:30  INFO: Columns totpkey(VARCHAR(64)) added to tc_users
+2025-08-01 07:58:30  INFO: ChangeSet changelog-5.10::changelog-5.10::author ran successfully in 22ms
+2025-08-01 07:58:30  INFO: Columns temporary(BOOLEAN) added to tc_users
+2025-08-01 07:58:30  INFO: ChangeSet changelog-5.11::changelog-5.11::author ran successfully in 21ms
+2025-08-01 07:58:30  INFO: Column tc_servers.twelvehourformat dropped
+2025-08-01 07:58:31  INFO: Column tc_users.twelvehourformat dropped
+2025-08-01 07:58:31  INFO: Columns priority(INT) added to tc_attributes
+2025-08-01 07:58:31  INFO: ChangeSet changelog-6.2::changelog-6.2::author ran successfully in 37ms
+2025-08-01 07:58:31  INFO: Marking ChangeSet: "changelog-6.3::changelog-6.3-old::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          schema/changelog-master.xml : Foreign Key PUBLIC.fk_event_deviceid does not exist
+
+2025-08-01 07:58:31  INFO: Foreign key fk_events_deviceid dropped
+2025-08-01 07:58:31  INFO: Foreign key fk_positions_deviceid dropped
+2025-08-01 07:58:31  INFO: ChangeSet changelog-6.3::changelog-6.3-new::author ran successfully in 79ms
+2025-08-01 07:58:31  INFO: Columns description(VARCHAR(4000)) added to tc_notifications
+2025-08-01 07:58:31  INFO: ChangeSet changelog-6.6::changelog-6.6::author ran successfully in 11ms
+2025-08-01 07:58:31  INFO: Table tc_actions created
+2025-08-01 07:58:31  INFO: ChangeSet changelog-6.7.0::changelog-6.7.0::author ran successfully in 38ms
+2025-08-01 07:58:31  INFO: Marking ChangeSet: "changelog-6.8.0::changelog-6.8.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          schema/changelog-master.xml : DBMS Precondition failed: expected postgresql, got h2
+
+2025-08-01 07:58:31  INFO: UPDATE SUMMARY
+2025-08-01 07:58:31  INFO: Run:                         27
+2025-08-01 07:58:31  INFO: Previously run:               0
+2025-08-01 07:58:31  INFO: Filtered out:                 0
+2025-08-01 07:58:31  INFO: -------------------------------
+2025-08-01 07:58:31  INFO: Total change sets:           27
+
+2025-08-01 07:58:31  INFO: Update summary generated
+2025-08-01 07:58:31  INFO: Update command completed successfully.
+2025-08-01 07:58:31  INFO: Successfully released change log lock
+2025-08-01 07:58:31  INFO: Command execution complete
+2025-08-01 07:58:35  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2025-08-01 07:58:37  INFO: jetty-11.0.25; built: 2025-03-13T00:15:57.301Z; git: a2e9fae3ad8320f2a713d4fa29bba356a99d1295; jvm 24.0.2+12-54
+2025-08-01 07:58:37  INFO: Started o.t.w.@129d1417{/,null,AVAILABLE}
+2025-08-01 07:58:37  INFO: Session workerName=node0
+2025-08-01 07:58:40  INFO: Started o.e.j.s.ServletContextHandler@5b097097{/,null,AVAILABLE}
+2025-08-01 07:58:40  INFO: Started ServerConnector@2ae96bd4{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2025-08-01 07:58:40  INFO: Started Server@78a08303{STARTING}[11.0.25,sto=0] @25875ms
+2025-08-01 08:40:24  INFO: Operating system name: Windows 10 version: 10.0 architecture: amd64
+2025-08-01 08:40:24  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 24.0.2+12-54
+2025-08-01 08:40:24  INFO: Memory limit heap: 998mb non-heap: 0mb
+2025-08-01 08:40:24  INFO: Character encoding: UTF-8
+2025-08-01 08:40:24  INFO: Version: 6.8.1
+2025-08-01 08:40:24  INFO: Starting server...
+2025-08-01 08:40:27  INFO: HikariPool-1 - Starting...
+2025-08-01 08:40:34  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2025-08-01 08:40:34  INFO: HikariPool-1 - Start completed.
+2025-08-01 08:40:36  INFO: Set default schema name to PUBLIC
+2025-08-01 08:40:36  INFO: Clearing database change log checksums
+2025-08-01 08:40:37  INFO: Successfully acquired change log lock
+2025-08-01 08:40:38  INFO: Successfully released change log lock
+2025-08-01 08:40:52  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-01 08:40:53  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-01 08:40:54  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-01 08:40:54  INFO: UPDATE SUMMARY
+2025-08-01 08:40:54  INFO: Run:                          0
+2025-08-01 08:40:54  INFO: Previously run:              27
+2025-08-01 08:40:54  INFO: Filtered out:                 0
+2025-08-01 08:40:54  INFO: -------------------------------
+2025-08-01 08:40:54  INFO: Total change sets:           27
+
+2025-08-01 08:40:54  INFO: Update summary generated
+2025-08-01 08:40:54  INFO: Successfully released change log lock
+2025-08-01 08:40:54  INFO: Command execution complete
+2025-08-01 08:41:00  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2025-08-01 08:41:03  INFO: jetty-11.0.25; built: 2025-03-13T00:15:57.301Z; git: a2e9fae3ad8320f2a713d4fa29bba356a99d1295; jvm 24.0.2+12-54
+2025-08-01 08:41:04  INFO: Started o.t.w.@dc55b28{/,null,AVAILABLE}
+2025-08-01 08:41:04  INFO: Session workerName=node0
+2025-08-01 08:41:09  INFO: Started o.e.j.s.ServletContextHandler@63a9df26{/,null,AVAILABLE}
+2025-08-01 08:41:09  INFO: Started ServerConnector@379fe6a3{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2025-08-01 08:41:09  INFO: Started Server@1ef61b8b{STARTING}[11.0.25,sto=0] @69577ms
+2025-08-01 08:47:43  INFO: Operating system name: Windows 10 version: 10.0 architecture: amd64
+2025-08-01 08:47:43  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 24.0.2+12-54
+2025-08-01 08:47:43  INFO: Memory limit heap: 998mb non-heap: 0mb
+2025-08-01 08:47:43  INFO: Character encoding: UTF-8
+2025-08-01 08:47:43  INFO: Version: 6.8.1
+2025-08-01 08:47:43  INFO: Starting server...
+2025-08-01 08:47:44  INFO: HikariPool-1 - Starting...
+2025-08-01 08:47:46  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2025-08-01 08:47:46  INFO: HikariPool-1 - Start completed.
+2025-08-01 08:47:47  INFO: Set default schema name to PUBLIC
+2025-08-01 08:47:47  INFO: Clearing database change log checksums
+2025-08-01 08:47:47  INFO: Successfully acquired change log lock
+2025-08-01 08:47:48  INFO: Successfully released change log lock
+2025-08-01 08:47:52  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-01 08:47:53  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-01 08:47:53  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-01 08:47:53  INFO: UPDATE SUMMARY
+2025-08-01 08:47:53  INFO: Run:                          0
+2025-08-01 08:47:53  INFO: Previously run:              27
+2025-08-01 08:47:53  INFO: Filtered out:                 0
+2025-08-01 08:47:53  INFO: -------------------------------
+2025-08-01 08:47:53  INFO: Total change sets:           27
+
+2025-08-01 08:47:53  INFO: Update summary generated
+2025-08-01 08:47:53  INFO: Successfully released change log lock
+2025-08-01 08:47:53  INFO: Command execution complete
+2025-08-01 08:47:56  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2025-08-01 08:47:57  INFO: jetty-11.0.25; built: 2025-03-13T00:15:57.301Z; git: a2e9fae3ad8320f2a713d4fa29bba356a99d1295; jvm 24.0.2+12-54
+2025-08-01 08:47:57  INFO: Started o.t.w.@4c351f4c{/,null,AVAILABLE}
+2025-08-01 08:47:57  INFO: Session workerName=node0
+2025-08-01 08:47:58  INFO: Started o.e.j.s.ServletContextHandler@45934182{/,null,AVAILABLE}
+2025-08-01 08:47:58  INFO: Started ServerConnector@54871d2f{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2025-08-01 08:47:58  INFO: Started Server@7b045db{STARTING}[11.0.25,sto=0] @17547ms
+2025-08-01 13:44:17  INFO: Operating system name: Windows 10 version: 10.0 architecture: amd64
+2025-08-01 13:44:18  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 24.0.2+12-54
+2025-08-01 13:44:18  INFO: Memory limit heap: 998mb non-heap: 0mb
+2025-08-01 13:44:18  INFO: Character encoding: UTF-8
+2025-08-01 13:44:18  INFO: Version: 6.8.1
+2025-08-01 13:44:18  INFO: Starting server...
+2025-08-01 13:44:19  INFO: HikariPool-1 - Starting...
+2025-08-01 13:44:22  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2025-08-01 13:44:22  INFO: HikariPool-1 - Start completed.
+2025-08-01 13:44:23  INFO: Set default schema name to PUBLIC
+2025-08-01 13:44:23  INFO: Clearing database change log checksums
+2025-08-01 13:44:23  INFO: Successfully acquired change log lock
+2025-08-01 13:44:24  INFO: Successfully released change log lock
+2025-08-01 13:44:30  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-01 13:44:32  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-01 13:44:32  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-01 13:44:32  INFO: UPDATE SUMMARY
+2025-08-01 13:44:32  INFO: Run:                          0
+2025-08-01 13:44:32  INFO: Previously run:              27
+2025-08-01 13:44:32  INFO: Filtered out:                 0
+2025-08-01 13:44:32  INFO: -------------------------------
+2025-08-01 13:44:32  INFO: Total change sets:           27
+
+2025-08-01 13:44:32  INFO: Update summary generated
+2025-08-01 13:44:32  INFO: Successfully released change log lock
+2025-08-01 13:44:32  INFO: Command execution complete
+2025-08-01 13:44:36  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2025-08-01 13:44:38  INFO: jetty-11.0.25; built: 2025-03-13T00:15:57.301Z; git: a2e9fae3ad8320f2a713d4fa29bba356a99d1295; jvm 24.0.2+12-54
+2025-08-01 13:44:38  INFO: Started o.t.w.@4c351f4c{/,null,AVAILABLE}
+2025-08-01 13:44:39  INFO: Session workerName=node0
+2025-08-01 13:44:42  INFO: Started o.e.j.s.ServletContextHandler@45934182{/,null,AVAILABLE}
+2025-08-01 13:44:42  INFO: Started ServerConnector@54871d2f{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2025-08-01 13:44:42  INFO: Started Server@7b045db{STARTING}[11.0.25,sto=0] @52668ms
+2025-08-01 13:58:49  INFO: login failed from: 127.0.0.1
+2025-08-01 13:58:53  INFO: login failed from: 127.0.0.1
+2025-08-01 13:58:56  INFO: login failed from: 127.0.0.1
+2025-08-01 13:58:58  INFO: login failed from: 127.0.0.1
+2025-08-01 13:59:00  INFO: login failed from: 127.0.0.1
+2025-08-02 09:19:57  INFO: Operating system name: Windows 10 version: 10.0 architecture: amd64
+2025-08-02 09:19:57  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 24.0.2+12-54
+2025-08-02 09:19:57  INFO: Memory limit heap: 998mb non-heap: 0mb
+2025-08-02 09:19:57  INFO: Character encoding: UTF-8
+2025-08-02 09:19:57  INFO: Version: 6.8.1
+2025-08-02 09:19:57  INFO: Starting server...
+2025-08-02 09:20:12  INFO: HikariPool-1 - Starting...
+2025-08-02 09:20:20  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2025-08-02 09:20:20  INFO: HikariPool-1 - Start completed.
+2025-08-02 09:20:22  INFO: Set default schema name to PUBLIC
+2025-08-02 09:20:22  INFO: Clearing database change log checksums
+2025-08-02 09:20:24  INFO: Successfully acquired change log lock
+2025-08-02 09:20:24  INFO: Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2025-08-02 09:20:24  INFO: Successfully released change log lock
+2025-08-02 09:20:34  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-02 09:20:35  INFO: Successfully acquired change log lock
+2025-08-02 09:20:35  INFO: Using deploymentId: 4140835637
+2025-08-02 09:20:35  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-02 09:20:36  INFO: Table tc_attributes created
+2025-08-02 09:20:36  INFO: Table tc_calendars created
+2025-08-02 09:20:36  INFO: Table tc_commands created
+2025-08-02 09:20:36  INFO: Table tc_device_attribute created
+2025-08-02 09:20:36  INFO: Table tc_device_command created
+2025-08-02 09:20:36  INFO: Table tc_device_driver created
+2025-08-02 09:20:36  INFO: Table tc_device_geofence created
+2025-08-02 09:20:36  INFO: Table tc_device_maintenance created
+2025-08-02 09:20:36  INFO: Table tc_device_notification created
+2025-08-02 09:20:36  INFO: Table tc_devices created
+2025-08-02 09:20:36  INFO: Table tc_drivers created
+2025-08-02 09:20:36  INFO: Table tc_events created
+2025-08-02 09:20:36  INFO: Table tc_geofences created
+2025-08-02 09:20:36  INFO: Table tc_group_attribute created
+2025-08-02 09:20:36  INFO: Table tc_group_command created
+2025-08-02 09:20:36  INFO: Table tc_group_driver created
+2025-08-02 09:20:36  INFO: Table tc_group_geofence created
+2025-08-02 09:20:36  INFO: Table tc_group_maintenance created
+2025-08-02 09:20:36  INFO: Table tc_group_notification created
+2025-08-02 09:20:36  INFO: Table tc_groups created
+2025-08-02 09:20:36  INFO: Table tc_maintenances created
+2025-08-02 09:20:36  INFO: Table tc_notifications created
+2025-08-02 09:20:36  INFO: Table tc_positions created
+2025-08-02 09:20:36  INFO: Table tc_servers created
+2025-08-02 09:20:36  INFO: Table tc_statistics created
+2025-08-02 09:20:36  INFO: Table tc_user_attribute created
+2025-08-02 09:20:36  INFO: Table tc_user_calendar created
+2025-08-02 09:20:36  INFO: Table tc_user_command created
+2025-08-02 09:20:36  INFO: Table tc_user_device created
+2025-08-02 09:20:36  INFO: Table tc_user_driver created
+2025-08-02 09:20:36  INFO: Table tc_user_geofence created
+2025-08-02 09:20:36  INFO: Table tc_user_group created
+2025-08-02 09:20:36  INFO: Table tc_user_maintenance created
+2025-08-02 09:20:36  INFO: Table tc_user_notification created
+2025-08-02 09:20:36  INFO: Table tc_user_user created
+2025-08-02 09:20:36  INFO: Table tc_users created
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_device_command (commandid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_device_command (deviceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_device_driver (deviceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_device_driver (driverid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_device_geofence (deviceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_device_geofence (geofenceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_device_maintenance (deviceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_device_maintenance (maintenanceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_device_notification (deviceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_device_notification (notificationid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_devices (groupid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_events (deviceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_geofences (calendarid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_group_attribute (attributeid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_group_attribute (groupid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_group_command (commandid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_group_command (groupid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_group_driver (driverid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_group_driver (groupid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_group_geofence (geofenceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_group_geofence (groupid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_group_maintenance (groupid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_group_maintenance (maintenanceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_group_notification (groupid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_group_notification (notificationid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_notifications (calendarid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_positions (deviceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_attribute (attributeid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_attribute (userid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_calendar (calendarid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_calendar (userid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_command (commandid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_command (userid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_device_attribute (attributeid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_device_attribute (deviceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_device (deviceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_device (userid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_driver (driverid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_driver (userid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_geofence (geofenceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_geofence (userid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_group (groupid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_group (userid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_maintenance (maintenanceid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_maintenance (userid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_notification (notificationid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_notification (userid)
+2025-08-02 09:20:36  INFO: Foreign key constraint added to tc_user_user (userid)
+2025-08-02 09:20:36  INFO: New row inserted into tc_servers
+2025-08-02 09:20:36  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean::author ran successfully in 478ms
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_groups (groupid)
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_user_user (manageduserid)
+2025-08-02 09:20:37  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean-common::author ran successfully in 11ms
+2025-08-02 09:20:37  INFO: Marking ChangeSet: "changelog-4.1::changelog-4.1-mssql::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          schema/changelog-master.xml : DBMS Precondition failed: expected mssql, got h2
+
+2025-08-02 09:20:37  INFO: Index user_device_user_id created
+2025-08-02 09:20:37  INFO: Index position_deviceid_fixtime created
+2025-08-02 09:20:37  INFO: ChangeSet changelog-4.7::changelog-4.7::author ran successfully in 156ms
+2025-08-02 09:20:37  INFO: Index event_deviceid_servertime created
+2025-08-02 09:20:37  INFO: ChangeSet changelog-4.9::changelog-4.9::author ran successfully in 3ms
+2025-08-02 09:20:37  INFO: Columns protocols(VARCHAR(4096)) added to tc_statistics
+2025-08-02 09:20:37  INFO: ChangeSet changelog-4.10::changelog-4.10::author ran successfully in 26ms
+2025-08-02 09:20:37  INFO: Columns announcement(VARCHAR(4000)) added to tc_servers
+2025-08-02 09:20:37  INFO: ChangeSet changelog-4.11::changelog-4.11::author ran successfully in 10ms
+2025-08-02 09:20:37  INFO: Column tc_events.servertime renamed to eventtime
+2025-08-02 09:20:37  INFO: ChangeSet changelog-4.13::changelog-4.13::author ran successfully in 3ms
+2025-08-02 09:20:37  INFO: Table tc_orders created
+2025-08-02 09:20:37  INFO: Table tc_user_order created
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_user_order (userid)
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_user_order (orderid)
+2025-08-02 09:20:37  INFO: Table tc_group_order created
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_group_order (groupid)
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_group_order (orderid)
+2025-08-02 09:20:37  INFO: Table tc_device_order created
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_device_order (deviceid)
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_device_order (orderid)
+2025-08-02 09:20:37  INFO: ChangeSet changelog-4.15::changelog-4.15::author ran successfully in 45ms
+2025-08-02 09:20:37  INFO: Columns disablereports(BOOLEAN) added to tc_servers
+2025-08-02 09:20:37  INFO: Columns disablereports(BOOLEAN) added to tc_users
+2025-08-02 09:20:37  INFO: Column tc_orders.toAddress renamed to toaddresstmp
+2025-08-02 09:20:37  INFO: Column tc_orders.fromAddress renamed to fromaddresstmp
+2025-08-02 09:20:37  INFO: Column tc_orders.toaddresstmp renamed to toaddress
+2025-08-02 09:20:37  INFO: Column tc_orders.fromaddresstmp renamed to fromaddress
+2025-08-02 09:20:37  INFO: ChangeSet changelog-5.0::changelog-5.0::author ran successfully in 62ms
+2025-08-02 09:20:37  INFO: Index idx_drivers_uniqueid created
+2025-08-02 09:20:37  INFO: Index idx_devices_uniqueid created
+2025-08-02 09:20:37  INFO: Index idx_users_email created
+2025-08-02 09:20:37  INFO: Index idx_users_login created
+2025-08-02 09:20:37  INFO: Index idx_users_token created
+2025-08-02 09:20:37  INFO: Columns overlayurl(VARCHAR(512)) added to tc_servers
+2025-08-02 09:20:37  INFO: ChangeSet changelog-5.1::changelog-5.1::author ran successfully in 24ms
+2025-08-02 09:20:37  INFO: Columns status(CHAR(8)) added to tc_devices
+2025-08-02 09:20:37  INFO: Columns geofenceids(VARCHAR(128)) added to tc_devices
+2025-08-02 09:20:37  INFO: ChangeSet changelog-5.2::changelog-5.2::author ran successfully in 60ms
+2025-08-02 09:20:37  INFO: Columns fixedemail(BOOLEAN) added to tc_servers
+2025-08-02 09:20:37  INFO: Columns fixedemail(BOOLEAN) added to tc_users
+2025-08-02 09:20:37  INFO: Columns expirationtime(TIMESTAMP) added to tc_devices
+2025-08-02 09:20:37  INFO: Table tc_keystore created
+2025-08-02 09:20:37  INFO: Index idx_users_token dropped from table tc_users
+2025-08-02 09:20:37  INFO: Column tc_users.token dropped
+2025-08-02 09:20:37  INFO: ChangeSet changelog-5.3::changelog-5.3::author ran successfully in 90ms
+2025-08-02 09:20:37  INFO: Columns motionstate(BOOLEAN),motiontime(TIMESTAMP),motiondistance(DOUBLE),overspeedstate(BOOLEAN),overspeedtime(TIMESTAMP),overspeedgeofenceid(INT) added to tc_devices
+2025-08-02 09:20:37  INFO: Table tc_commands_queue created
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_commands_queue (deviceid)
+2025-08-02 09:20:37  INFO: Index idx_commands_queue_deviceid created
+2025-08-02 09:20:37  INFO: ChangeSet changelog-5.4::changelog-5.4::author ran successfully in 153ms
+2025-08-02 09:20:37  INFO: Column tc_commands_queue.description dropped
+2025-08-02 09:20:37  INFO: ChangeSet changelog-5.5::changelog-5.5::author ran successfully in 11ms
+2025-08-02 09:20:37  INFO: Columns motionstreak(BOOLEAN) added to tc_devices
+2025-08-02 09:20:37  INFO: Table tc_reports created
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_reports (calendarid)
+2025-08-02 09:20:37  INFO: Table tc_user_report created
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_user_report (userid)
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_user_report (reportid)
+2025-08-02 09:20:37  INFO: Table tc_group_report created
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_group_report (groupid)
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_group_report (reportid)
+2025-08-02 09:20:37  INFO: Table tc_device_report created
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_device_report (deviceid)
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_device_report (reportid)
+2025-08-02 09:20:37  INFO: ChangeSet changelog-5.6::changelog-5.6::author ran successfully in 70ms
+2025-08-02 09:20:37  INFO: Columns commandid(INT) added to tc_notifications
+2025-08-02 09:20:37  INFO: Foreign key constraint added to tc_notifications (commandid)
+2025-08-02 09:20:37  INFO: ChangeSet changelog-5.7::changelog-5.7::author ran successfully in 25ms
+2025-08-02 09:20:38  INFO: Column tc_devices.geofenceids dropped
+2025-08-02 09:20:38  INFO: Columns geofenceids(VARCHAR(128)) added to tc_positions
+2025-08-02 09:20:38  INFO: ChangeSet changelog-5.8::changelog-5.8::author ran successfully in 40ms
+2025-08-02 09:20:38  INFO: Columns calendarid(INT) added to tc_devices
+2025-08-02 09:20:38  INFO: Foreign key constraint added to tc_devices (calendarid)
+2025-08-02 09:20:38  INFO: ChangeSet changelog-5.9::changelog-5.9::author ran successfully in 28ms
+2025-08-02 09:20:38  INFO: Columns totpkey(VARCHAR(64)) added to tc_users
+2025-08-02 09:20:38  INFO: ChangeSet changelog-5.10::changelog-5.10::author ran successfully in 25ms
+2025-08-02 09:20:38  INFO: Columns temporary(BOOLEAN) added to tc_users
+2025-08-02 09:20:38  INFO: ChangeSet changelog-5.11::changelog-5.11::author ran successfully in 20ms
+2025-08-02 09:20:38  INFO: Column tc_servers.twelvehourformat dropped
+2025-08-02 09:20:38  INFO: Column tc_users.twelvehourformat dropped
+2025-08-02 09:20:38  INFO: Columns priority(INT) added to tc_attributes
+2025-08-02 09:20:38  INFO: ChangeSet changelog-6.2::changelog-6.2::author ran successfully in 39ms
+2025-08-02 09:20:38  INFO: Marking ChangeSet: "changelog-6.3::changelog-6.3-old::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          schema/changelog-master.xml : Foreign Key PUBLIC.fk_event_deviceid does not exist
+
+2025-08-02 09:20:38  INFO: Foreign key fk_events_deviceid dropped
+2025-08-02 09:20:38  INFO: Foreign key fk_positions_deviceid dropped
+2025-08-02 09:20:38  INFO: ChangeSet changelog-6.3::changelog-6.3-new::author ran successfully in 74ms
+2025-08-02 09:20:38  INFO: Columns description(VARCHAR(4000)) added to tc_notifications
+2025-08-02 09:20:38  INFO: ChangeSet changelog-6.6::changelog-6.6::author ran successfully in 13ms
+2025-08-02 09:20:38  INFO: Table tc_actions created
+2025-08-02 09:20:38  INFO: ChangeSet changelog-6.7.0::changelog-6.7.0::author ran successfully in 25ms
+2025-08-02 09:20:38  INFO: Marking ChangeSet: "changelog-6.8.0::changelog-6.8.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          schema/changelog-master.xml : DBMS Precondition failed: expected postgresql, got h2
+
+2025-08-02 09:20:38  INFO: Columns motionpositionid(INT) added to tc_devices
+2025-08-02 09:20:38  INFO: ChangeSet changelog-6.9.0::changelog-6.9.0::author ran successfully in 21ms
+2025-08-02 09:20:38  INFO: UPDATE SUMMARY
+2025-08-02 09:20:38  INFO: Run:                         28
+2025-08-02 09:20:38  INFO: Previously run:               0
+2025-08-02 09:20:38  INFO: Filtered out:                 0
+2025-08-02 09:20:38  INFO: -------------------------------
+2025-08-02 09:20:38  INFO: Total change sets:           28
+
+2025-08-02 09:20:38  INFO: Update summary generated
+2025-08-02 09:20:38  INFO: Update command completed successfully.
+2025-08-02 09:20:38  INFO: Successfully released change log lock
+2025-08-02 09:20:38  INFO: Command execution complete
+2025-08-02 09:20:44  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2025-08-02 09:20:46  INFO: jetty-11.0.25; built: 2025-03-13T00:15:57.301Z; git: a2e9fae3ad8320f2a713d4fa29bba356a99d1295; jvm 24.0.2+12-54
+2025-08-02 09:20:46  INFO: Started o.t.w.@1f18b4bd{/,null,AVAILABLE}
+2025-08-02 09:20:46  INFO: Session workerName=node0
+2025-08-02 09:20:49  INFO: Started o.e.j.s.ServletContextHandler@7e9fb794{/,null,AVAILABLE}
+2025-08-02 09:20:49  INFO: Started ServerConnector@70d2d52a{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2025-08-02 09:20:49  INFO: Started Server@3722865e{STARTING}[11.0.25,sto=0] @53058ms
+2025-08-02 09:22:58  INFO: Operating system name: Windows 10 version: 10.0 architecture: amd64
+2025-08-02 09:22:58  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 24.0.2+12-54
+2025-08-02 09:22:58  INFO: Memory limit heap: 998mb non-heap: 0mb
+2025-08-02 09:22:58  INFO: Character encoding: UTF-8
+2025-08-02 09:22:58  INFO: Version: 6.8.1
+2025-08-02 09:22:58  INFO: Starting server...
+2025-08-02 09:22:58  INFO: HikariPool-1 - Starting...
+2025-08-02 09:23:01  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2025-08-02 09:23:01  INFO: HikariPool-1 - Start completed.
+2025-08-02 09:23:01  INFO: Set default schema name to PUBLIC
+2025-08-02 09:23:01  INFO: Clearing database change log checksums
+2025-08-02 09:23:02  INFO: Successfully acquired change log lock
+2025-08-02 09:23:03  INFO: Successfully released change log lock
+2025-08-02 09:23:11  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-02 09:23:12  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-02 09:23:12  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-02 09:23:12  INFO: UPDATE SUMMARY
+2025-08-02 09:23:12  INFO: Run:                          0
+2025-08-02 09:23:12  INFO: Previously run:              28
+2025-08-02 09:23:12  INFO: Filtered out:                 0
+2025-08-02 09:23:12  INFO: -------------------------------
+2025-08-02 09:23:12  INFO: Total change sets:           28
+
+2025-08-02 09:23:12  INFO: Update summary generated
+2025-08-02 09:23:12  INFO: Successfully released change log lock
+2025-08-02 09:23:12  INFO: Command execution complete
+2025-08-02 09:23:14  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2025-08-02 09:23:15  INFO: jetty-11.0.25; built: 2025-03-13T00:15:57.301Z; git: a2e9fae3ad8320f2a713d4fa29bba356a99d1295; jvm 24.0.2+12-54
+2025-08-02 09:23:15  INFO: Started o.t.w.@6938d886{/,null,AVAILABLE}
+2025-08-02 09:23:15  INFO: Session workerName=node0
+2025-08-02 09:23:17  INFO: Started o.e.j.s.ServletContextHandler@6b22cb85{/,null,AVAILABLE}
+2025-08-02 09:23:17  INFO: Started ServerConnector@174a8ab4{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2025-08-02 09:23:17  INFO: Started Server@1abea9f9{STARTING}[11.0.25,sto=0] @20916ms
