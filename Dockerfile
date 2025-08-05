@@ -16,7 +16,7 @@ WORKDIR /asiscar-server
 COPY --from=builder /asiscar-server/target/ .
 
 # Puerto principal del servidor
-EXPOSE 8082
+EXPOSE 8082 5055
 
 # Comando de ejecución (asumiendo que tracker-server.jar está en target/)
 CMD ["java", "-jar", "tracker-server.jar", "conf/traccar.xml"]

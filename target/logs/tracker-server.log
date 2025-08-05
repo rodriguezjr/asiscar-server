@@ -585,3 +585,69 @@
 2025-08-02 09:23:17  INFO: Started o.e.j.s.ServletContextHandler@6b22cb85{/,null,AVAILABLE}
 2025-08-02 09:23:17  INFO: Started ServerConnector@174a8ab4{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
 2025-08-02 09:23:17  INFO: Started Server@1abea9f9{STARTING}[11.0.25,sto=0] @20916ms
+2025-08-05 00:28:26  INFO: Operating system name: Windows 10 version: 10.0 architecture: amd64
+2025-08-05 00:28:26  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 24.0.2+12-54
+2025-08-05 00:28:26  INFO: Memory limit heap: 998mb non-heap: 0mb
+2025-08-05 00:28:26  INFO: Character encoding: UTF-8
+2025-08-05 00:28:26  INFO: Version: 6.8.1
+2025-08-05 00:28:26  INFO: Starting server...
+2025-08-05 00:28:28  INFO: HikariPool-1 - Starting...
+2025-08-05 00:28:31  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2025-08-05 00:28:31  INFO: HikariPool-1 - Start completed.
+2025-08-05 00:28:33  INFO: Set default schema name to PUBLIC
+2025-08-05 00:28:33  INFO: Clearing database change log checksums
+2025-08-05 00:28:33  INFO: Successfully acquired change log lock
+2025-08-05 00:28:34  INFO: Successfully released change log lock
+2025-08-05 00:28:40  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-05 00:28:41  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-05 00:28:41  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-05 00:28:41  INFO: UPDATE SUMMARY
+2025-08-05 00:28:41  INFO: Run:                          0
+2025-08-05 00:28:41  INFO: Previously run:              27
+2025-08-05 00:28:41  INFO: Filtered out:                 0
+2025-08-05 00:28:41  INFO: -------------------------------
+2025-08-05 00:28:41  INFO: Total change sets:           27
+
+2025-08-05 00:28:41  INFO: Update summary generated
+2025-08-05 00:28:41  INFO: Successfully released change log lock
+2025-08-05 00:28:41  INFO: Command execution complete
+2025-08-05 00:28:45  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2025-08-05 00:28:46  INFO: jetty-11.0.25; built: 2025-03-13T00:15:57.301Z; git: a2e9fae3ad8320f2a713d4fa29bba356a99d1295; jvm 24.0.2+12-54
+2025-08-05 00:28:46  INFO: Started o.t.w.@dc55b28{/,null,AVAILABLE}
+2025-08-05 00:28:46  INFO: Session workerName=node0
+2025-08-05 00:28:48  INFO: Started o.e.j.s.ServletContextHandler@63a9df26{/,null,AVAILABLE}
+2025-08-05 00:28:48  INFO: Started ServerConnector@379fe6a3{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2025-08-05 00:28:48  INFO: Started Server@1ef61b8b{STARTING}[11.0.25,sto=0] @55700ms
+2025-08-05 01:04:57  INFO: Operating system name: Windows 10 version: 10.0 architecture: amd64
+2025-08-05 01:04:57  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 24.0.2+12-54
+2025-08-05 01:04:57  INFO: Memory limit heap: 998mb non-heap: 0mb
+2025-08-05 01:04:57  INFO: Character encoding: UTF-8
+2025-08-05 01:04:57  INFO: Version: 6.8.1
+2025-08-05 01:04:57  INFO: Starting server...
+2025-08-05 01:04:58  INFO: HikariPool-1 - Starting...
+2025-08-05 01:05:02  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2025-08-05 01:05:02  INFO: HikariPool-1 - Start completed.
+2025-08-05 01:05:03  INFO: Set default schema name to PUBLIC
+2025-08-05 01:05:03  INFO: Clearing database change log checksums
+2025-08-05 01:05:04  INFO: Successfully acquired change log lock
+2025-08-05 01:05:04  INFO: Successfully released change log lock
+2025-08-05 01:05:10  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-05 01:05:10  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-05 01:05:10  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2025-08-05 01:05:10  INFO: UPDATE SUMMARY
+2025-08-05 01:05:10  INFO: Run:                          0
+2025-08-05 01:05:10  INFO: Previously run:              27
+2025-08-05 01:05:10  INFO: Filtered out:                 0
+2025-08-05 01:05:10  INFO: -------------------------------
+2025-08-05 01:05:10  INFO: Total change sets:           27
+
+2025-08-05 01:05:10  INFO: Update summary generated
+2025-08-05 01:05:10  INFO: Successfully released change log lock
+2025-08-05 01:05:10  INFO: Command execution complete
+2025-08-05 01:05:14  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2025-08-05 01:05:15  INFO: jetty-11.0.25; built: 2025-03-13T00:15:57.301Z; git: a2e9fae3ad8320f2a713d4fa29bba356a99d1295; jvm 24.0.2+12-54
+2025-08-05 01:05:16  INFO: Started o.t.w.@741198fb{/,null,AVAILABLE}
+2025-08-05 01:05:16  INFO: Session workerName=node0
+2025-08-05 01:05:18  INFO: Started o.e.j.s.ServletContextHandler@59a65b77{/,null,AVAILABLE}
+2025-08-05 01:05:18  INFO: Started ServerConnector@3239c176{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2025-08-05 01:05:18  INFO: Started Server@62ca9e62{STARTING}[11.0.25,sto=0] @36939ms
